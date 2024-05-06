@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body{
-    font-family: 'arial';
+    font-family: "inter", sans-serif;
 }
 
 /* header */
@@ -22,7 +23,7 @@ body{
     padding: 1rem;
     position: sticky;
     top: 0;
-    box-shadow: 10px 0px 10px #35AAB2;
+    box-shadow: 10px 0px 10px #1857DD;
     z-index: 99;
 }
 
@@ -41,7 +42,7 @@ body{
 
 .logo span{
     color: #ffffff;
-    font: bold;
+    font-weight: 700;
 }
 
 nav ul{
@@ -64,19 +65,22 @@ nav ul{
     margin-right: 1rem;
 }
 
+nav ul a{
+    text-decoration: none;
+}
+
 nav ul li{
     font-size: 1.4rem;
     color: #ffffff;
     margin-right: 1.5rem;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
     word-spacing: 1rem;
 }
 
 nav ul li:hover{
     color: #1857DD;
-    transition: all 0.4s;
-    transform: translateY(-5px)
+    transition: all 0.7s;
 }
 
 header{
@@ -97,9 +101,10 @@ header{
     flex-basis: 50%;
 }
 
-.header-button-side-left h2{
-    font-size: 3.2rem;
+.header-button-side-left h3{
+    font-size: 2.8rem;
     margin-bottom: 2rem;
+    font-weight: 600;
 }
 
 .header-button-side-rigth{
@@ -114,7 +119,7 @@ header{
 
 .header-button-side-rigth h2{
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 0.5rem;
 }
@@ -122,7 +127,7 @@ header{
 .header-button-side-rigth img{
     margin: 0.7rem;
     align-items: center;
-    width: 105%;
+    width: 90%;
 }
 
 .button-mobile button{
@@ -131,7 +136,7 @@ header{
 .produtos h3{
     text-align: center;
     justify-content: center;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .produto-destaque img{ 
@@ -308,7 +313,7 @@ main{
 
 .cols-3 img{
     grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
+    max-width: 80%;
     justify-content: space-evenly;
     padding: 1rem;
     align-items: center;
@@ -347,26 +352,26 @@ main{
 
 .product-name{
     font-size: 1.3rem;
-    font-weight: 600;
-    margin-top: 0.4rem;
+    font-weight: 700;
+    margin-top: 0.8rem;
     color: #ffffff;
 }
 
 .rate{
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-bottom: 3rem;
 }
 
 .product-price span{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 00;
 }
 .product-price{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .exclusive-container{
@@ -387,8 +392,8 @@ main{
 
 .exclusive-container h4{
     margin-bottom: 1rem;
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .exclusive-container p{
@@ -397,8 +402,8 @@ main{
 }
 
 .exclusive-container img{
-    margin-right: 5rem;
-    max-width: 470px;
+    margin-right: 7rem;
+    max-width: 60%;
     max-height: 100%;
     margin-bottom: 3rem;
 }
@@ -425,10 +430,9 @@ main{
 /* testemunhos */
 .informacoes{
     display: flex;
-    padding: 3em 1rem;
+    padding: 1rem 5rem;
     justify-content: space-evenly;
-    box-shadow: 10px 0 40px #1857DD;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 
@@ -440,12 +444,13 @@ main{
     justify-content: center;
     flex-basis: 100%;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .logo-tip img{
-    max-width: 100%;
-    margin-top: 2rem;
+    margin-left: 4rem;
+    max-width: 80%;
+    margin-top: 1rem;
     display: flex;
 }
 
@@ -467,12 +472,11 @@ main{
         align-items: center;
         justify-content: cente;
         max-width: 100%;
-        box-shadow: 0 0 15px #1857DD;
         
     }
 
     .informacoes h1{
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .informacao img{
@@ -547,7 +551,7 @@ main{
   
   .informacao button{
     margin-top: 2rem;
-    background-color: #1C0ECE;
+    background-color: #110797;
     border: none;
     cursor: pointer;
     padding: 0.8rem 3.8rem;
@@ -589,6 +593,8 @@ main{
     margin-right: 4em;
 }
 
+
+
 .icone-page img{
     margin-top: 1rem;
     margin-right: 5rem;
@@ -596,59 +602,39 @@ main{
 
 /* Main content */
 
-/* comentarios */
-.comentarios{
+/* footer */
+
+.G-background{
+    background: #000;
+}
+
+
+.footer-content{
+    display: flex;
+    color: #000;
+    background-color: #000;
+    padding: 2rem;
+}
+
+.meios-de-pagamento{
     color: #fff;
-    display: flex;
-    padding: 4rem 1rem;
-    justify-content: space-evenly;
+    align-items: left;
 }
 
-.comentario{
-    display: flex;
+.meios-de-contato{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 22%;
+    color: #fff;
     text-align: center;
-    box-shadow: 0 0 15px #1857DD;
-    padding: 1rem;
-    border-radius: 2rem;
-    cursor: pointer;
-    transition: all 0.3s;
 }
 
-.comentario:hover{
-    transform: translateY(10px);
-}
-
-.comentario p{
-    margin: 5px  0;
-}
-
-.comentario p:first-child{
-    font-weight: bold;
-    font-size: 1.3rem;
-    color: #39A5F4;
-    margin-top: 2rem;
-    line-height: 2rem;
-}
-
-.comentario p:last-child{
-    color: #39A5F4;
+.links-parceiros{
+    color: #fff;
+    padding-left: 240%;
+    margin-bottom: 0%;
+    flex-direction: column;
+    text-align: right;
 }
 
 
-/* media queries cometarios */
-@media (max-width: 800px){
-    .comentarios{
-        flex-direction: column;
-    }
 
-    .comentario{
-        margin-bottom: 2.5rem;
-    }
-}
-
-
-/* comentario */
+/* footer */
